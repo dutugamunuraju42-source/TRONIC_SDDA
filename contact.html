@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | TRONIC SDDA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .contact-info {
+      flex: 1;
+      min-width: 300px;
+    }
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      background: var(--bg-panel);
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px;
+      background: var(--bg-dark);
+      border: 1px solid #333;
+      color: var(--text-main);
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+      transition: border-color 0.3s;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--neon-blue);
+      box-shadow: 0 0 10px rgba(0, 243, 255, 0.1);
+    }
+    textarea.form-control {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+      margin-top: 20px;
+    }
+    .whatsapp-btn:hover {
+      background: #128C7E;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <i data-lucide="shield-zap" class="blue"></i>
+        <span class="blue">TRONIC</span> <span class="orange">SDDA</span>
+      </div>
+      <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="py-4" style="margin-top: 80px; text-align: center; border-bottom: 1px solid rgba(0,243,255,0.1); background: rgba(0,243,255,0.02);">
+    <div class="container">
+      <h1 class="section-title">Get In Touch</h1>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Ready to start your next electronics project? Contact us today for a consultation or quote.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="py-4">
+    <div class="container contact-container">
+      
+      <!-- Contact Info & WhatsApp -->
+      <div class="contact-info">
+        <h2 style="color: var(--neon-blue); font-family: 'Orbitron'; margin-bottom: 20px;">Let's Talk Electronics</h2>
+        <p style="color: var(--text-muted); margin-bottom: 30px;">Whether you need a custom PCB design, prototyping services, or components for your project, our team is here to help.</p>
+        
+        <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
+          <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,243,255,0.1); display: flex; align-items: center; justify-content: center;">
+            <i data-lucide="phone" style="color: var(--neon-blue); width: 20px;"></i>
+          </div>
+          <div>
+            <h4 style="font-size: 0.9rem; color: var(--text-muted);">Phone</h4>
+            <p>0784506134</p>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
+          <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,157,0,0.1); display: flex; align-items: center; justify-content: center;">
+            <i data-lucide="mail" style="color: var(--neon-orange); width: 20px;"></i>
+          </div>
+          <div>
+            <h4 style="font-size: 0.9rem; color: var(--text-muted);">Email</h4>
+            <p>info@tronicsdda.com</p>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 30px; display: flex; align-items: center; gap: 15px;">
+          <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,255,102,0.1); display: flex; align-items: center; justify-content: center;">
+            <i data-lucide="map-pin" style="color: var(--neon-green); width: 20px;"></i>
+          </div>
+          <div>
+            <h4 style="font-size: 0.9rem; color: var(--text-muted);">Location</h4>
+            <p>Tech Hub, Main St, Innovation City</p>
+          </div>
+        </div>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/0784506134" target="_blank" class="whatsapp-btn">
+          <i data-lucide="message-circle"></i> Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3 style="margin-bottom: 20px; font-family: 'Orbitron';">Send a Message</h3>
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject / Project Type</label>
+            <input type="text" id="subject" class="form-control" placeholder="PCB Design Inquiry" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Details</label>
+            <textarea id="message" class="form-control" placeholder="Please describe your project requirements..." required></textarea>
+          </div>
+          <button type="submit" class="btn" style="width: 100%;">Submit Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>TRONIC SDDA</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Empowering the future of electronics with precision engineering and high-quality components.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i data-lucide="phone" style="width: 16px; margin-right: 5px;"></i> 0784506134</li>
+            <li><i data-lucide="mail" style="width: 16px; margin-right: 5px;"></i> info@tronicsdda.com</li>
+            <li><i data-lucide="map-pin" style="width: 16px; margin-right: 5px;"></i> Tech Hub, Main St.</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div style="display: flex; gap: 15px; margin-top: 10px;">
+            <a href="#" style="color: var(--neon-blue);"><i data-lucide="facebook"></i></a>
+            <a href="#" style="color: var(--neon-blue);"><i data-lucide="twitter"></i></a>
+            <a href="#" style="color: var(--neon-blue);"><i data-lucide="linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 TRONIC SDDA. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
